@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class DataController : MonoBehaviour
 {
-	private static GameObject _container;
+	static GameObject _container;
 
-	public static GameObject Container
+    public static GameObject Container
 	{
 		get { return _container; }
 	}
 
-	private static DataController _instance;
+	static DataController _instance;
 
 	public static DataController Instance
 	{
@@ -22,6 +22,7 @@ public class DataController : MonoBehaviour
 				_container = new GameObject();
 				_container.name = "DataControll";
 				_instance = _container.AddComponent(typeof(DataController)) as DataController;
+				DontDestroyOnLoad(_container);
 			}
 			return _instance;
 		}
