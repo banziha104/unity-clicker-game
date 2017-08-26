@@ -31,7 +31,8 @@ public class DataController : MonoBehaviour
 	public int Gold = 0;
 	
 	public int GoldPerSec = 1;
-	
+
+	public int CollectGoldLevel = 1;
 
 	void Start () {
 		

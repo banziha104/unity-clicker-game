@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
 	public Text TextGold;
 	public Camera MainCamera;
 	public GameObject Effectspark;
+	public AudioClip ClickAudio;
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -39,8 +41,19 @@ public class GameController : MonoBehaviour
 			{
 				Debug.Log(hit.point);
 				Debug.DrawLine(ray.origin , hit.point , Color.red); //마우스클릭한 곳과 카메라간에 선을 그림
-				Instantiate(Effectspark, hit.point, Effectspark.transform.rotation);
+				Instantiate(Effectspark, hit.point, Effectspark.transform.rotation); //
+				MainCamera.gameObject.AddComponent<AudioSource>().PlayOneShot(ClickAudio); //오디오 재생
 			}
+		}
+	}
+
+	public void UpgradeCollectGold()
+	{
+		int Cost = DataController.Instance.CollectGoldLevel * DataController.Instance.CollectGoldLevel;
+		
+		if (DataController.Instance.Gold < Cost)
+		{
+			
 		}
 	}
 }
