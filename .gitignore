@@ -1,0 +1,6 @@
+Library
+Obj
+Temp
+ProjectSettings
+*.projectsettings
+.csproj
