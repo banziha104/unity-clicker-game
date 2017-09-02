@@ -5,7 +5,6 @@ using UnityEngine;
 public class DataController : MonoBehaviour
 {
 	static GameObject _container;
-
     public static GameObject Container
 	{
 		get { return _container; }
@@ -28,18 +27,35 @@ public class DataController : MonoBehaviour
 		}
 	}
 	// Use this for initialization
+	public string gameDataProjectFilePath = "/game.json";
+
+	public GameData GameData;
 	public int Gold = 0;
 	
 	public int GoldPerSec = 1;
 
 	public int CollectGoldLevel = 1;
 
-	void Start () {
-		
+	public StatData statData;
+
+	public StatData GetStatList()
+	{
+		if (statData == null)
+		{
+			LoadStatData();
+		}
+		return statData;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	public void LoadStatData()
+	{
+		TextAsset statJson = Resources.Load("MetaData/Stat") as TextAsset;
+		statData = JsonUtility.FromJson<StatData>(statJson.text);
+	}
+
+	public void LoadGameData()
+	{
+		string filePath = Application.persistentDataPath + gameDataProjectFilePath;
 		
 	}
 }

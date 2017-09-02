@@ -52,8 +52,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Data\GameData.cs" />
+    <Compile Include="Assets\Script\Data\Item.cs" />
+    <Compile Include="Assets\Script\Data\Monster.cs" />
+    <Compile Include="Assets\Script\Data\MonsterItemMap.cs" />
+    <Compile Include="Assets\Script\Data\Quest.cs" />
+    <Compile Include="Assets\Script\Data\Stat.cs" />
+    <Compile Include="Assets\Script\Data\StatData.cs" />
     <Compile Include="Assets\Script\DataController.cs" />
+    <Compile Include="Assets\Script\EffectScript.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
+    <Compile Include="Assets\Script\TapController.cs" />
+    <None Include="Assets\Resources\MetaData\Untitled.txt" />
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>

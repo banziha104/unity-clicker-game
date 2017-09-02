@@ -1068,88 +1068,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 198000010926203772, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: randomSeed
-      value: -1720295174
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010926203772, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010926203772, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010245698542, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: randomSeed
-      value: -2001077285
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010245698542, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010245698542, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011539581918, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: randomSeed
-      value: 1758709265
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011539581918, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000011539581918, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000013461985240, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000013461985240, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011356782260, guid: 843695ef5e6d39f458b99e399ccc09b1, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011356782260, guid: 843695ef5e6d39f458b99e399ccc09b1, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000012831875596, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: randomSeed
-      value: 945428369
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011356782260, guid: 843695ef5e6d39f458b99e399ccc09b1, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000012831875596, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000012831875596, guid: 843695ef5e6d39f458b99e399ccc09b1,
-        type: 2}
-      propertyPath: lengthInSec
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 843695ef5e6d39f458b99e399ccc09b1, type: 2}
   m_IsPrefabParent: 0
@@ -1475,6 +1393,8 @@ MonoBehaviour:
   TextGold: {fileID: 1344686140}
   MainCamera: {fileID: 1785028261}
   Effectspark: {fileID: 307346009}
+  ClickAudio: {fileID: 8300000, guid: c472454e0698b450695cf253a90bebc0, type: 3}
+  UpgradeCollectGoldText: {fileID: 0}
 --- !u!1 &2010889368
 GameObject:
   m_ObjectHideFlags: 0
